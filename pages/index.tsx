@@ -1,9 +1,9 @@
+import { setNavbarSelection } from "@/components/functions"
 import { useState, useEffect } from "react"
 import About from "./about"
 export default function Home() {
     useEffect(function Mount()  {
-        $('.navbar-nav').children().removeClass('active')
-        $('.navbar-nav').children().eq(0).addClass('active')
+        setNavbarSelection(0)
         
     },[])
     

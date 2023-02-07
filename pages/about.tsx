@@ -1,11 +1,10 @@
 import CountUp from "react-countup";
 import {useEffect,useState} from "react"
+import {setNavbarSelection} from '../components/functions'
 
 export default function About() {
     useEffect(function Mount()  {
-        $('.navbar-nav').children().removeClass('active')
-        $('.navbar-nav').children().eq(1).addClass('active')
-        
+        setNavbarSelection(1)
     },[])
     return <>
 {/* About Start */}
