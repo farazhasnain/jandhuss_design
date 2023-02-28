@@ -19,12 +19,23 @@ function Header() {
     },[])
     function setNavbar() {
             var nav = document.getElementById('nav')
-        if(window.scrollY > 100) {
-            nav.style = 'position: fixed; background: var(--dark) !important;'
-        }
-        else {
-            nav.style = 'position: absolute; background: transparent !important;'
+            console.log(window.innerWidth)
+            if(window.innerWidth > 750) {
+                if(window.scrollY > 100 ) {
+                    nav.style = 'position: fixed; background: var(--dark) !important;'
+                }
+                else {
+                    nav.style = 'position: absolute; background: transparent !important;'
 
+                }
+            }
+            else {
+                nav.style = 'position: fixed; background: var(--dark) !important; width:100%; z-index:1;'
+            }
+    }
+    function ToggleNavbar() {
+        if(window.innerWidth < 750) {
+            $('#navbarCollapse').removeClass('show')
         }
     }
     return <>
@@ -40,22 +51,35 @@ function Header() {
                     <span className="fa fa-bars"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarCollapse">
-                    <div className="navbar-nav ms-auto py-0 pe-4">
+                    <div className="navbar-nav ms-auto py-0 pe-4" onClick={ToggleNavbar}>
                         <Link href='/' className="nav-item nav-link active">Home</Link>
                         <Link href='about' className="nav-item nav-link">About</Link>
                         <Link href='about' className="nav-item nav-link">Services</Link>
                         <Link href='about' className="nav-item nav-link">Menu</Link>
+                        <Link href='about' className="nav-item nav-link">Contact</Link>
                         <div className="nav-item dropdown">
-                            <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
                             <div className="dropdown-menu m-0">
                                 <a href="booking.html" className="dropdown-item">Booking</a>
                                 <a href="team.html" className="dropdown-item">Our Team</a>
                                 <a href="testimonial.html" className="dropdown-item">Testimonial</a>
                             </div>
                         </div>
-                        <a href="contact.html" className="nav-item nav-link">Contact</a>
                     </div>
-                    <a href="" className="btn btn-primary py-2 px-4">Book an appointment</a>
+                    {/* <a href="" className="btn btn-primary py-2 px-4">Book an appointment</a> */}
+                    <div className="last-icons">
+                        <center>
+                            <a href="#">
+                                <i className="fa fa-search" ></i>
+                            </a>
+                            <a href="#">
+                                <i className="fa fa-shopping-bag" ></i>
+                            </a>
+                            <a href="#">
+                                <i className="fa fa-user" ></i>
+                            </a>
+                        </center>
+                    </div>
                 </div>
             </nav>
             {

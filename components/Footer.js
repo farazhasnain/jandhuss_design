@@ -46,15 +46,15 @@ function Footer() {
                 <div className="copyright">
                     <div className="row">
                         <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a className="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
-							Designed By <a className="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br />
+                            &copy; <a className="border-bottom" href="#">Jandhuss.com</a>, All Right Reserved. 
+							Powered By <a className="border-bottom" href="https://htmlcodex.com">Verbox Systems</a><br />
                         </div>
                         <div className="col-md-6 text-center text-md-end">
                             <div className="footer-menu">
                                 <a href="">Home</a>
                                 <a href="">Cookies</a>
                                 <a href="">Help</a>
-                                <a href="">FQAs</a>
+                                <a href="">FAQs</a>
                             </div>
                         </div>
                     </div>

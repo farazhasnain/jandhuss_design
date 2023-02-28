@@ -359,6 +359,7 @@
 
 .team-item img {
     transition: .5s;
+    height: 279px;
 }
 
 .team-item:hover img {
@@ -477,3 +478,27 @@
     padding-right: 0;
     border-right: none;
 }
+
+
+
+/* Region Custom CSS */
+.last-icons {
+    display: flex;
+    padding-left: 2%;
+}
+.last-icons i {
+    color:white;
+    padding-right:20px;
+    font-size: 18px;
+}
+@media (max-width: 750px) {
+    .last-icons {
+        padding-left: 40%;
+    }
+    .last-icons i {
+        color:white;
+        padding-right:20px;
+        font-size: 20px;
+    }
+}
+/* Region Custom CSS end*/

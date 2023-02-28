@@ -9,8 +9,8 @@ import Script from 'next/script'
 
 export default function App({ Component, pageProps }: AppProps) {
   return <>
-  
-  <Script src="https://code.jquery.com/jquery-3.4.1.min.js" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>
+  {/* <Script src="https://code.jquery.com/jquery-3.4.1.min.js" /> */}
         <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" />
         <Script src="lib/wow/wow.min.js" />
         <Script src="js/main.js" />
