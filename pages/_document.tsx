@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 
 export default function Document() {
   return (
@@ -21,8 +22,7 @@ export default function Document() {
         <Main />
         <NextScript />
       </body>
-      
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossOrigin='anonymous'></script>
+      <Script src='https://kit.fontawesome.com/a076d05399.js' crossOrigin='anonymous'></Script>
     </Html>
   )
 }
