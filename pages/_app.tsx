@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" />
         <Script src="lib/wow/wow.min.js" />
         <Script src="js/main.js" />
-      <Script src='https://kit.fontawesome.com/a076d05399.js' crossOrigin='anonymous'></Script>
+      <Script src='lib/fa_kit.js' crossOrigin='anonymous'></Script>
   <div className='container-xxl bg-white p-0'>
     <Spinner />
   <Header />
